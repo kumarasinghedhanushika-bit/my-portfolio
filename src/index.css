@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #150826;
+  background-image: radial-gradient(circle at 10% 0%, rgba(255,111,165,0.12), transparent 40%),
+    radial-gradient(circle at 90% 20%, rgba(255,200,87,0.10), transparent 40%),
+    radial-gradient(circle at 50% 100%, rgba(78,205,196,0.10), transparent 45%);
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #150826;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#FF6FA5, #FFC857);
+  border-radius: 999px;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #FF6FA5, #FFC857, #4ECDC4, #FF6FA5);
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 6s linear infinite;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
