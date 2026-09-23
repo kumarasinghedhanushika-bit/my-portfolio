@@ -11,14 +11,7 @@ const projects = [
     github: "https://github.com/kumarasinghedhanushika-bit",
     live: "https://example.com",
   },
-  {
-    name: "TasteBuds",
-    desc: "A recipe-sharing app with search filters, saved favorites and a clean, card-based browsing experience.",
-    tags: ["React", "Tailwind", "Firebase"],
-    gradient: "from-teal/25 to-pink/20",
-    github: "https://github.com/kumarasinghedhanushika-bit",
-    live: "https://example.com",
-  },
+ 
   {
     name: "i computer",
     desc: "A -commerce website.",
@@ -28,7 +21,7 @@ const projects = [
     live: "https://example.com",
   },
  
-  
+
 ];
 
 function Projects() {
