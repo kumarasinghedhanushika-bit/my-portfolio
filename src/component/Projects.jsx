@@ -4,11 +4,11 @@ import Reveal from "./Reveal.jsx";
 
 const projects = [
   {
-    name: "Campus Connect",
+    name: "Hospital Management System",
     desc: "A student portal for SLIATE with course schedules, announcements and a resource-sharing hub.",
-    tags: ["React", "Node.js", "MongoDB"],
+    tags: ["React", "Spring Boot", "MongoDB"],
     gradient: "from-pink/30 to-gold/20",
-    github: "https://github.com",
+    github: "https://github.com/kumarasinghedhanushika-bit",
     live: "https://example.com",
   },
   {
@@ -16,25 +16,19 @@ const projects = [
     desc: "A recipe-sharing app with search filters, saved favorites and a clean, card-based browsing experience.",
     tags: ["React", "Tailwind", "Firebase"],
     gradient: "from-teal/25 to-pink/20",
-    github: "https://github.com",
+    github: "https://github.com/kumarasinghedhanushika-bit",
     live: "https://example.com",
   },
   {
-    name: "BudgetBloom",
-    desc: "A personal finance tracker with animated charts to visualize spending habits over time.",
-    tags: ["React", "Chart.js", "REST API"],
+    name: "i computer",
+    desc: "A -commerce website.",
+    tags: ["Mongo DB", "MERN Stack", "REST API"],
     gradient: "from-gold/25 to-teal/20",
-    github: "https://github.com",
+    github: "https://github.com/kumarasinghedhanushika-bit",
     live: "https://example.com",
   },
-  {
-    name: "PawPals",
-    desc: "A pet adoption listing site with map-based search and a shelter admin dashboard.",
-    tags: ["Next.js", "PostgreSQL", "Tailwind"],
-    gradient: "from-pink/25 to-teal/20",
-    github: "https://github.com",
-    live: "https://example.com",
-  },
+ 
+  
 ];
 
 function Projects() {

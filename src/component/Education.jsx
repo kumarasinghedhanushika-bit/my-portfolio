@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Reveal from "./Reveal.jsx";
+import { title } from "framer-motion/client";
 
 const timeline = [
   {
@@ -8,18 +9,41 @@ const timeline = [
     place: "SLIATE — Sri Lanka Institute of Advanced Technological Education",
     desc: "Specializing in software development, databases and web technologies, with hands-on project work each semester.",
   },
-  {
-    year: "2022",
+  
+
+    {
+    year: "Jan 2020 - May 2020",
     title: "Fullstack Web Development Certificate",
-    place: "Online Program Skyray ",
+    place: "Introduction to Basic Computer Course",
     desc: "Completed a focused course covering MERN stack and responsive design fundamentals.",
   },
+ 
+  
+
+  {
+    place: " National Apprentice and Industrial Training Authority - NAITA  ",
+    title: "Certificate Course in CELV (the cetificate in English for Living 'N Vacations')",
+    year: "March 2024",
+  },
+
+  {
+    place: " Open University Kalutara  ",
+    title: "Human Resource Management Course",
+    year: "May 2024",
+  },
+
   {
     year: "2022",
     title: "G.C.E. Advanced Level",
     place: "Buddist Girls' College, Mount Lavinia",
     desc: "Studied for the G.C.E. Advanced Level examination, focusing on subjects.",
-  }
+  },
+  
+  {
+    place: " Uggalboda Maha Vidyalaya - Kalutara ",
+    title: "GCE Ordinary Level Examination ",
+    year: "Dec 2019",
+  },
 ]
 
 function Education() {
