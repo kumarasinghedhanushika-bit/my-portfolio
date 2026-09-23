@@ -33,7 +33,10 @@ function Navbar() {
           scrolled ? "glass shadow-lg shadow-black/30" : "bg-transparent"
         }`}
       >
-        <a href="#home" className="font-display font-bold text-lg tracking-tight">
+        <a
+          href="#home"
+          className="font-display font-bold text-lg tracking-tight"
+        >
           K<span className="text-gradient">.</span>K
         </a>
 
@@ -48,6 +51,18 @@ function Navbar() {
               </a>
             </li>
           ))}
+
+          {/* Resume */}
+          <li>
+            <a
+              href="/Krishani_Kumarasinghe CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 text-sm text-muted hover:text-text rounded-full hover:bg-white/5 transition-colors"
+            >
+              Resume
+            </a>
+          </li>
         </ul>
 
         <a
@@ -75,7 +90,10 @@ function Navbar() {
             className="md:hidden max-w-4xl mx-auto mt-2 glass rounded-3xl overflow-hidden"
           >
             {links.map((l) => (
-              <li key={l.label} className="border-b border-white/5 last:border-b-0">
+              <li
+                key={l.label}
+                className="border-b border-white/5 last:border-b-0"
+              >
                 <a
                   href={l.href}
                   onClick={() => setOpen(false)}
@@ -85,6 +103,19 @@ function Navbar() {
                 </a>
               </li>
             ))}
+
+            {/* Resume - Mobile */}
+            <li className="border-b border-white/5">
+              <a
+                href="/Krishani_Kumarasinghe CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setOpen(false)}
+                className="block px-6 py-4 text-sm text-text"
+              >
+                Resume
+              </a>
+            </li>
           </motion.ul>
         )}
       </AnimatePresence>

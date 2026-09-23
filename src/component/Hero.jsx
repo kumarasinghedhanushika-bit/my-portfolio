@@ -38,17 +38,31 @@ function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.25 }}
-            className="mt-5 flex flex-wrap gap-2"
+            transition={{ duration: 0.7, delay: 0.55 }}
+            className="mt-8 flex flex-wrap items-center gap-4"
           >
-            {roles.map((role) => (
-              <span
-                key={role}
-                className="text-sm font-medium px-4 py-1.5 rounded-full glass text-muted"
-              >
-                {role}
-              </span>
-            ))}
+            <a
+              href="#projects"
+              className="px-7 py-3 rounded-full bg-gradient-to-r from-pink via-gold to-teal bg-[length:200%_auto] hover:bg-right transition-all duration-500 text-bg font-semibold text-sm"
+            >
+              See My Work
+            </a>
+
+            <a
+              href="#contact"
+              className="px-7 py-3 rounded-full glass text-text font-semibold text-sm hover:bg-white/10 transition-colors"
+            >
+              Contact Me
+            </a>
+
+            <a
+              href="/Krishani_Kumarasinghe CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-7 py-3 rounded-full glass text-text font-semibold text-sm hover:bg-white/10 transition-colors"
+            >
+              Download Resume
+            </a>
           </motion.div>
 
           <motion.p
@@ -108,11 +122,12 @@ function Hero() {
           className="relative mx-auto md:mx-0 animate-floaty"
         >
           <div className="relative w-64 h-80 sm:w-72 sm:h-96 rounded-[2.5rem] glass overflow-hidden flex items-center justify-center">
-            <span className="font-display text-muted text-sm px-6 text-center">
-              your-photo.jpg
-              <br />
-              <span className="text-xs opacity-60">(swap this for a real photo)</span>
-            </span>
+            <img
+              src="/preview.png"
+              alt="Your Photo"
+              className="w-full h-full object-cover"
+            />
+
             <div className="absolute inset-0 bg-gradient-to-t from-bg/60 via-transparent to-transparent" />
           </div>
           <div className="absolute -top-6 -right-6 h-16 w-16 rounded-2xl bg-gradient-to-br from-pink to-gold animate-spinSlow" />

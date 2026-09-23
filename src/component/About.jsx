@@ -26,9 +26,14 @@ function About() {
               transition={{ duration: 0.4 }}
               className="relative w-full max-w-sm mx-auto md:mx-0"
             >
-              <div className="aspect-[4/5] rounded-[2rem] glass flex items-center justify-center">
-                <span className="text-muted text-sm font-display">your-photo.jpg</span>
+              <div className="aspect-[4/5] rounded-[2rem] glass flex items-center justify-center overflow-hidden">
+                <img
+                  src="/preview.png"
+                  alt="Krishani Kumarasinghe"
+                  className="w-full h-full object-cover"
+                />
               </div>
+
               <div className="absolute -bottom-5 -right-5 h-24 w-24 rounded-full bg-gradient-to-br from-pink to-gold opacity-90 blur-sm" />
             </motion.div>
           </Reveal>
