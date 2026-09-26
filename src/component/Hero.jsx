@@ -41,28 +41,8 @@ function Hero() {
             transition={{ duration: 0.7, delay: 0.55 }}
             className="mt-8 flex flex-wrap items-center gap-4"
           >
-            <a
-              href="#projects"
-              className="px-7 py-3 rounded-full bg-gradient-to-r from-pink via-gold to-teal bg-[length:200%_auto] hover:bg-right transition-all duration-500 text-bg font-semibold text-sm"
-            >
-              See My Work
-            </a>
-
-            <a
-              href="#contact"
-              className="px-7 py-3 rounded-full glass text-text font-semibold text-sm hover:bg-white/10 transition-colors"
-            >
-              Contact Me
-            </a>
-
-            <a
-              href="/Krishani_Kumarasinghe CV.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-7 py-3 rounded-full glass text-text font-semibold text-sm hover:bg-white/10 transition-colors"
-            >
-              Download Resume
-            </a>
+          
+          
           </motion.div>
 
           <motion.p
@@ -93,6 +73,15 @@ function Hero() {
               className="px-7 py-3 rounded-full glass text-text font-semibold text-sm hover:bg-white/10 transition-colors"
             >
               Contact Me
+            </a>
+
+              <a
+              href="/Krishani_Kumarasinghe CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-7 py-3 rounded-full glass text-text font-semibold text-sm hover:bg-white/10 transition-colors"
+            >
+              Download Resume
             </a>
           </motion.div>
 
